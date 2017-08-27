@@ -60,7 +60,6 @@ def getgameinfo(id, game_id)
     last_game_data = JSON.parse(s.read.to_s)["response"]["games"]
     last_game_data.each do |k|
       if k["appid"] == game_id
-        puts "wat"
         twoweeks = k["playtime_2weeks"]
         playtime = k["playtime_forever"]
         logo = k["img_logo_url"]
@@ -110,4 +109,8 @@ def draw(name, avatar_url, status, color, color_magic, info, logo_url)
     c.draw "text 95,-10 \"#{status}\""
   end
   img.write("#{name}result.png")
+  if color_magic == "rgb(144,186,60)"
+    File.delete("#{name}game.png")
+  end
+  File.delete("#{name}avatar.png")
 end

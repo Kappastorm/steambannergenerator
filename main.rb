@@ -1,7 +1,7 @@
 load 'funcs.rb'
-
 puts "Steam64 ID'nizi veya özel steam url'nizin sonunda yazan id'yi giriniz.."
 input = gets.chomp
+loop do
 data = getuserdata(input)
 user_name = data[0]
 game_name = data[1]
@@ -25,3 +25,5 @@ if game_id != 0
   info = "Son iki haftada                       Toplam\n#{twoweeks} oynandi!    #{playtime} oynandi!"
 end
 draw(user_name, avatar_url, status, color, color_magic, info, logo_url)
+sleep(15)
+end
