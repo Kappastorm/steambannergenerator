@@ -33,11 +33,11 @@ Gemfile'daki gemleri bundler ile kurmak için bu kütüphaneyi klonladığınız
 ```
 bundle install
 ```
-ImageMagick'i indirmek için [buraya](https://www.imagemagick.org/script/download.php), 
+ImageMagick'i indirmek için [buraya](https://www.imagemagick.org/script/download.php),
 GraphicsMagick'i indirmek için [buraya](http://www.graphicsmagick.org/download.html) tıklayınız
 **Q8 olan dağıtımlardan Ruby versiyonunuza uygun olan dağıtımı seçtiğinizden emin olun.**
 ## Nasıl kullanılır?
-Çok kolay, main.rb'yi çalıştırdığınız anda zaten size Steam64 ID'nizi veya Özel steam url'nizin sonunda yer alan ID'nizi isteyecek. 
+Çok kolay, main.rb'yi çalıştırdığınız anda zaten size Steam64 ID'nizi veya Özel steam url'nizin sonunda yer alan ID'nizi isteyecek.
 Onlara da şöyle erişebilirsiniz;
 Steam masaüstü uygulaması için:
 -Steam profilinize girin
@@ -51,7 +51,7 @@ Kopyaladığınız bağlantı iki şekilde olacaktır:
 -http://steamcommunity.com/profiles/76561198065222558
 ```
 Eğer bağlantı 1. gibiyse id/'den sonraki yazıyı, 2. gibiyse profiles/'dan sonrakı sayıyı main.rb'de giriniz.
-Program "steamisminiz"result.png şeklinde bir resim oluşturacak ve açık kaldığı sürece bunu güncelleyecektir.
+Program **steamid'niz**.png şeklinde bir resim oluşturacak ve açık kaldığı sürece bunu güncelleyecektir.
 ### Örnekler
 
 ![online](/examples/online.png?raw=true)

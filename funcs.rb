@@ -70,7 +70,7 @@ def getgameinfo(id, game_id)
 end
 
 
-def draw(name, avatar_url, status, color, color_magic, info, logo_url)
+def draw(name, avatar_url, status, color, color_magic, info, logo_url,id)
   image = MiniMagick::Image.open(avatar_url)
   image.format "png"
   image.write("#{name}avatar.png")
@@ -85,8 +85,8 @@ def draw(name, avatar_url, status, color, color_magic, info, logo_url)
     game_logo.write("#{name}game.png")
     game_logo = ChunkyPNG::Image.from_file("#{name}game.png")
     main.compose!(game_logo, 17, 95)
-    main.save("#{name}result.png")
-    main = MiniMagick::Image.open("#{name}result.png")
+    main.save("#{id}.png")
+    main = MiniMagick::Image.open("#{id}.png")
     main.combine_options do |c|
       c.gravity 'West'
       c.pointsize '14'
@@ -94,11 +94,11 @@ def draw(name, avatar_url, status, color, color_magic, info, logo_url)
       c.fill("rgb(84,165,197)")
       c.draw "text 150,43 \"#{info}\""
     end
-    main.write("#{name}result.png")
+    main.write("#{id}.png")
   else
-    main.save("#{name}result.png")
+    main.save("#{id}.png")
   end
-  img = MiniMagick::Image.open("#{name}result.png")
+  img = MiniMagick::Image.open("#{id}.png")
   img.combine_options do |c|
     c.gravity 'West'
     c.pointsize '22'
@@ -108,7 +108,7 @@ def draw(name, avatar_url, status, color, color_magic, info, logo_url)
     c.fill(color_magic)
     c.draw "text 95,-10 \"#{status}\""
   end
-  img.write("#{name}result.png")
+  img.write("#{id}.png")
   if color_magic == "rgb(144,186,60)"
     File.delete("#{name}game.png")
   end
