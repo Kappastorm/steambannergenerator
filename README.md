@@ -52,6 +52,16 @@ Kopyaladığınız bağlantı iki şekilde olacaktır:
 ```
 Eğer bağlantı 1. gibiyse id/'den sonraki yazıyı, 2. gibiyse profiles/'dan sonrakı sayıyı main.rb'de giriniz.
 Program *steamid'niz*.png şeklinde bir resim oluşturacak ve açık kaldığı sürece bunu güncelleyecektir.
+### Hatalar
+#### Türkçe karakterler gözükmüyor
+GraphicsMagick'de bu problemi ben de yaşadım, eğer ImageMagick'i doğru bir biçimde kurmayı başarırsanız Türkçe karakterler doğru gözükecektir.
+Alternatif olarak funcs.rb'yi silip funcs_alternate.rb'nin ismini funcs.rb olarak değiştirirseniz Türkçe karakterler değiştirilecektir.
+#### ImageMagick/GraphicsMagick not installed
+ImageMagick veya GraphicsMagick'den birisini doğru bir biçimde kuramadığınızı ifade eder.
+Öncelikle kurmaya çalıştığınız dağıtımın ruby versiyonuzun bit'iyle ayni bit değerinde olduğuna emin olun.
+Yine çalışmazsa; ImageMagick kurduysanız GraphicsMagick'i, GraphicsMagick kurduysanız ImageMagick'i kurmayı deneyin.
+#### The specified profile could not be found. (SteamCondenserError)
+Hatalı steam id girdiğinizi gösterir. Girdiğiniz id'yi kontrol edip tekrar deneyin.
 ### Örnekler
 
 ![online](/examples/online.png?raw=true)

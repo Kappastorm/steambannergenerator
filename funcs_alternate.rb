@@ -19,7 +19,7 @@ def getuserdata(url_or_id)
     game_id = contents["gameid"]
     case contents["personastate"]
     when 0
-      status = "Çevrimdışı"
+      status = "Çevrimdisi"
       color = ChunkyPNG::Color::rgb(107,107,107)
       color_magic = "rgb(107,107,107)"
     when 1
@@ -27,11 +27,11 @@ def getuserdata(url_or_id)
       color = ChunkyPNG::Color::rgb(84,165,197)
       color_magic = "rgb(84,165,197)"
     when 2
-      status = "Meşgul"
+      status = "Mesgul"
       color = ChunkyPNG::Color::rgb(140,16,16)
       color_magic = "rgb(254,46,46)"
     when 3
-      status = "Dışarıda"
+      status = "Disarida"
       color = ChunkyPNG::Color::rgb(255,195,0)
       color_magic = "rgb(255,195,0)"
     when 4
