@@ -51,7 +51,7 @@ Kopyaladığınız bağlantı iki şekilde olacaktır:
 -http://steamcommunity.com/profiles/76561198065222558
 ```
 Eğer bağlantı 1. gibiyse id/'den sonraki yazıyı, 2. gibiyse profiles/'dan sonrakı sayıyı main.rb'de giriniz.
-Program **steamid'niz**.png şeklinde bir resim oluşturacak ve açık kaldığı sürece bunu güncelleyecektir.
+Program *steamid'niz*.png şeklinde bir resim oluşturacak ve açık kaldığı sürece bunu güncelleyecektir.
 ### Örnekler
 
 ![online](/examples/online.png?raw=true)
