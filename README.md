@@ -7,7 +7,7 @@ Gemfile'da bulunan gemler bilgisayarınızda bulunmalı.
 ImageMagick'in bilgisayarınızda bulunduğundan emin olmak için:
 ```
 $ convert -version
-Version: ImageMagick 6.8.9-7 Q16 x86_64 2014-09-11 http://www.imagemagick.org
+Version: ImageMagick 6.8.9-7 Q8 x86_64 2014-09-11 http://www.imagemagick.org
 Copyright: Copyright (C) 1999-2014 ImageMagick Studio LLC
 Features: DPC Modules
 Delegates: bzlib fftw freetype jng jpeg lcms ltdl lzma png tiff xml zlib
