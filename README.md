@@ -7,13 +7,13 @@ Gemfile'da bulunan gemler bilgisayarınızda bulunmalı.
 ImageMagick'in bilgisayarınızda bulunduğundan emin olmak için:
 ```
 $ convert -version
-Version: ImageMagick 6.8.9-7 Q8 x86_64 2014-09-11 http://www.imagemagick.org
+Version: ImageMagick 6.8.9-7 Q16 x86_64 2014-09-11 http://www.imagemagick.org
 Copyright: Copyright (C) 1999-2014 ImageMagick Studio LLC
 Features: DPC Modules
 Delegates: bzlib fftw freetype jng jpeg lcms ltdl lzma png tiff xml zlib
 ```
 
-GraphicsMagick'şn bilgisayarınızda bulunduğundan emin olmak için:
+GraphicsMagick'in bilgisayarınızda bulunduğundan emin olmak için:
 ```
 $ gm version
 GraphicsMagick 1.3.26 2017-07-04 Q8 http://www.GraphicsMagick.org/
@@ -51,7 +51,16 @@ Kopyaladığınız bağlantı iki şekilde olacaktır:
 -http://steamcommunity.com/profiles/76561198065222558
 ```
 Eğer bağlantı 1. gibiyse id/'den sonraki yazıyı, 2. gibiyse profiles/'dan sonrakı sayıyı main.rb'de giriniz.
-Program "steamisminiz"result.png şeklinde bir resim oluşturacak ve açık kaldığı sürece bunu güncelleyecektir.  
+Program "steamisminiz"result.png şeklinde bir resim oluşturacak ve açık kaldığı sürece bunu güncelleyecektir.
+### Örnekler
+
+![online](/examples/online.png?raw=true)
+![away](/examples/away.png?raw=true)
+![busy](/examples/busy.png?raw=true)
+![ingame](/examples/ingame.png?raw=true)
+![lookingtoplay](/examples/lookingtoplay.png?raw=true)
+![lookingtotrade](/examples/lookingtotrade.png?raw=true)
+![offline](/examples/offline.png?raw=true)
 ###### License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
