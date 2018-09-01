@@ -38,6 +38,7 @@ bundle install
 ImageMagick'i indirmek için [buraya](https://www.imagemagick.org/script/download.php),
 GraphicsMagick'i indirmek için [buraya](http://www.graphicsmagick.org/download.html) tıklayınız
 **Q8 olan dağıtımlardan Ruby versiyonunuza uygun olan dağıtımı seçtiğinizden emin olun.**
+
 "config.yml"'nin içinde "api_key" kısmına api key'inizi yapıştırın. 
 ## Nasıl kullanılır?
 Çok kolay, main.rb'yi çalıştırdığınız anda zaten size Steam64 ID'nizi veya Özel steam url'nizin sonunda yer alan ID'nizi isteyecek.
