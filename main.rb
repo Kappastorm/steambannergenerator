@@ -1,5 +1,10 @@
-load 'funcs.rb'
-
+require 'yaml'
+config = Psych.load_file("config.yml")
+if config["no_turkish_characters"]
+  load 'funcs_alternate.rb'
+else
+  load 'funcs.rb'
+end
 def main(input)
   data = getuserdata(input)
   user_name = data[0]
@@ -21,7 +26,7 @@ def main(input)
     twoweeks = "#{twoweeks/60} saat #{twoweeks%60} dakika"
     playtime = "#{playtime/60} saat #{playtime%60} dakika"
     logo_url = "http://media.steampowered.com/steamcommunity/public/images/apps/" + game_id.to_s + "/" + logo + ".jpg"
-    info = "Son iki haftada                        Toplam\n#{twoweeks} oynandi!  #{playtime} oynandi!"
+    info = "Son iki haftada                        Toplam\n#{twoweeks} oynandı!  #{playtime} oynandı!"
   end
   draw(user_name, avatar_url, status, color, color_magic, info, logo_url,id)
   return id,status,user_name,avatar_url

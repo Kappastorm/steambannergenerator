@@ -4,6 +4,8 @@ Steam'deki güncel durumunuzu bir badge halinde png dosyasına dönüştürüp, 
 ### Gerekli Şeyler
 Bilgisayarınızda ImageMagick veya GraphicsMagick'in, kullandığınız Ruby versiyonuyla aynı bit versiyonuna sahip bir dağıtımı bulunmalı.
 Gemfile'da bulunan gemler bilgisayarınızda bulunmalı.
+Steam Web API anahtarı'nız olmalı.
+API anahtarını [Steam developer sayfasından](https://steamcommunity.com/dev/registerkey) elde edebilirsiniz.
 ImageMagick'in bilgisayarınızda bulunduğundan emin olmak için:
 ```
 $ convert -version
@@ -36,6 +38,7 @@ bundle install
 ImageMagick'i indirmek için [buraya](https://www.imagemagick.org/script/download.php),
 GraphicsMagick'i indirmek için [buraya](http://www.graphicsmagick.org/download.html) tıklayınız
 **Q8 olan dağıtımlardan Ruby versiyonunuza uygun olan dağıtımı seçtiğinizden emin olun.**
+"config.yml"'nin içinde "api_key" kısmına api key'inizi yapıştırın. 
 ## Nasıl kullanılır?
 Çok kolay, main.rb'yi çalıştırdığınız anda zaten size Steam64 ID'nizi veya Özel steam url'nizin sonunda yer alan ID'nizi isteyecek.
 Onlara da şöyle erişebilirsiniz;
@@ -55,7 +58,7 @@ Program *steamid'niz*.png şeklinde bir resim oluşturacak ve açık kaldığı 
 ### Hatalar
 #### Türkçe karakterler gözükmüyor
 GraphicsMagick'de bu problemi ben de yaşadım, eğer ImageMagick'i doğru bir biçimde kurmayı başarırsanız Türkçe karakterler doğru gözükecektir.
-Alternatif olarak funcs.rb'yi silip funcs_alternate.rb'nin ismini funcs.rb olarak değiştirirseniz Türkçe karakterler değiştirilecektir.
+Alternatif olarak config.yml'nin içinde "no_turkish_characters'ı "True" olarak ayarlarsanız, türkçe karakterler kullanılamyacaktır.
 #### ImageMagick/GraphicsMagick not installed
 ImageMagick veya GraphicsMagick'den birisini doğru bir biçimde kuramadığınızı ifade eder.
 Öncelikle kurmaya çalıştığınız dağıtımın ruby versiyonuzun bit'iyle ayni bit değerinde olduğuna emin olun.
