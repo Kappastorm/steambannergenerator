@@ -1,4 +1,4 @@
-#Sadly this project is abandoned has potential security vulnerabilities
+# Sadly this project is abandoned has potential security vulnerabilities
 
 # Steam banner oluşturucu
 Steam'deki güncel durumunuzu bir badge halinde png dosyasına dönüştürüp, bu resmi *her durumunuz değiştiğinde güncelleyen* bir ruby programı.
